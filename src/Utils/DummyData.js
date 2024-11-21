@@ -125,7 +125,6 @@ export const loanProducts = [
         slug: "kpr-primary-uob",
         url: null
     },
-    // New products
     {
         images: "/images/uob.png",
         bank: "UOB",
@@ -232,3 +231,36 @@ export const loanProducts = [
         url: null
     }
 ];
+
+
+export const notifications = [
+    {
+      time: '2 hrs',
+      status: 'updated',
+      user: 'admin_branch',
+      description: 'Harry Handoko - Contact | MYCRM',
+      isPrimary: true,
+    },
+    {
+      time: '2 hrs',
+      status: 'updated',
+      user: 'admin_branch',
+      description: 'Harry Handoko - Application | MYCRM',
+      isPrimary: false,
+    },
+    {
+      time: '4 hrs',
+      status: 'updated',
+      user: 'admin_branch',
+      description: 'Harry Handoko - Application | MYCRM',
+      isPrimary: true,
+    },
+    {
+      time: '4 hrs',
+      status: 'updated',
+      user: 'admin_branch',
+      description: 'Harry Handoko - Contact | MYCRM',
+      isPrimary: false,
+    },
+   
+  ];
