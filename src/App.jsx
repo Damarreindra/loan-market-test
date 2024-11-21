@@ -4,17 +4,19 @@ import BankProduct from "./Pages/BankProduct"
 import DetailBankProduct from "./Pages/DetailBankProduct"
 import EditBankProduct from "./Pages/EditBankProduct"
 import EditApplication from "./Pages/EditApplication"
+import NotFoundPage from "./Pages/NotFoundPage"
 
 function App() {
  return(
  <Router>
   <Routes>
-  <Route path="/" element={<DashboardPage/>}/>
+   <Route path="/" element={<DashboardPage/>}/>
     <Route path="/dashboard" element={<DashboardPage/>}/>
     <Route path="/dashboard/product/bank-product" element={<BankProduct />} />
     <Route path="/dashboard/product/bank-product/:slug/detail" element={<DetailBankProduct />} />
     <Route path="/dashboard/product/bank-product/:slug/edit" element={<EditBankProduct />} />
     <Route path="/dashboard/edit-application" element={<EditApplication />} />
+    <Route path="*" element={<NotFoundPage />} />
 
   </Routes>
  </Router>

@@ -25,13 +25,13 @@ function MainDashboard() {
             {
                 menu.map((item) => {
                     return (
-                        <div className='flex flex-col md:flex-row bg-white rounded-xl items-center col-span-3 md:col-span-1 gap-5 p-5'>
-                            <div className='text-primary text-lg md:text-2xl bg-blue-200 p-1 md:p-5 flex justify-center items-center rounded-full'>
+                        <div className='flex flex-col md:flex-row bg-white rounded-xl items-center justify-between col-span-3 md:col-span-1 gap-5 p-3'>
+                            <div className='text-primary text-base md:text-xl bg-blue-200 p-1 md:p-3 flex justify-center items-center rounded-full'>
                                 {item.icon}
                             </div>
-                            <div className='flex flex-col mx-auto text-[25px]'>
-                                <span className='text-black font-bold text-lg md:text-2xl'>{item.name.toUpperCase()}</span>
-                                <span className='text-primary font-bold text-center text-lg md:text-2xl'>{item.qty}</span>
+                            <div className='flex flex-col mx-auto  '>
+                                <span className='text-black font-bold text-lg md:text-xl'>{item.name.toUpperCase()}</span>
+                                <span className='text-primary font-bold text-center text-lg md:text-xl'>{item.qty}</span>
 
                             </div>
                         </div>
@@ -41,7 +41,7 @@ function MainDashboard() {
             <div className='md:col-span-2 md:row-span-4 col-span-6 row-span-6 rounded-xl bg-white'>
             <NotificationTimeline/>
             </div>
-            <div className='md:col-span-4 col-span-6 row-span-3 rounded-xl px-40 py-10 relative bg-white flex md:flex-row flex-col items-center justify-between'>
+            <div className='md:col-span-4 col-span-6  row-span-3 rounded-xl px-30 py-10 relative bg-white flex md:flex-row flex-col items-center'>
                 <button className='text-primary font-bold text-2xl absolute md:top-5 md:right-10 right-3 top-3'><FaRegEdit /></button>
                 <RadialProgressChart value={2} maxValue={5} />
                 <span className="w-px h-full bg-gray-300 hidden md:block"></span>

@@ -69,8 +69,8 @@ function DashboardLayout({ children }) {
 
                       >
                         <div className="flex items-center gap-3">
-                          <span className="text-[20px]">{item.icon}</span>
-                          <span className="text-[20px]">{item.name}</span>
+                          <span className="text-[18px]">{item.icon}</span>
+                          <span className="text-[18px]">{item.name}</span>
                           <FaCaretDown className={`transform ${showProductDropdown ? 'rotate-180' : ''}`} />
                         </div>
 
@@ -101,12 +101,8 @@ function DashboardLayout({ children }) {
                       ${isActive ? "bg-[#17A9E2] text-white" : "hover:bg-gray-200"}`
                         }
                       >
-                        <span className="text-[20px]">
-                          {item.icon}
-                        </span>
-                        <span className="text-[20px]">
-                          {item.name}
-                        </span>
+                       <span className="text-[18px]">{item.icon}</span>
+                       <span className="text-[18px]">{item.name}</span>
                       </NavLink>
 
                     )}
