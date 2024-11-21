@@ -1,3 +1,5 @@
+
+
 export const loanProducts = [
     {
         images: "/images/mandiri.png",
@@ -231,6 +233,7 @@ export const loanProducts = [
         url: null
     }
 ];
+
 
 
 export const notifications = [

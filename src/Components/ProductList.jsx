@@ -2,8 +2,6 @@ import React from 'react'
 import { FaSortAlphaDown } from 'react-icons/fa'
 import { SlMagnifier } from 'react-icons/sl'
 import { loanProducts } from '../Utils/DummyData'
-import { MdOutlineStar } from 'react-icons/md'
-import { BsStarFill } from 'react-icons/bs'
 import { IoMdStar, IoMdStarOutline } from 'react-icons/io'
 
 function ProductList() {
@@ -41,7 +39,7 @@ function ProductList() {
                 <div className='grid grid-cols-4 gap-8'>
                     {
                         loanProducts.map((item, index)=>(
-                            <div className='rounded-xl shadow border border-gray-200 flex gap-4 justify-center flex-col p-5 relative md:col-span-1 col-span-4'>
+                            <div className='rounded-xl shadow border border-gray-200 flex gap-4 justify-center flex-col p-5 relative md:col-span-1 xl:col-span-2 col-span-4'>
                                 <img className='w-1/2 mx-auto' src={item.images} alt="" />
                                 <div className='flex flex-col justify-center items-center'>
                                     <div className='flex'>

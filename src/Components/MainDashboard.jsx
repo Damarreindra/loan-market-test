@@ -1,43 +1,17 @@
 import React from 'react'
-import { AiOutlineBank } from 'react-icons/ai'
-import { BsBag } from 'react-icons/bs'
-import { CiFileOn } from 'react-icons/ci'
-import { MdOutlineContactPhone } from 'react-icons/md'
-import Chart from 'chart.js/auto';
 import RadialProgressChart from './RadialProgress'
 import RadialTargetChart from './RadialTarget'
 import { FaRegEdit } from "react-icons/fa";
 import TopBanksChart from './TopBanksChart'
 import NotificationTimeline from './NotificationTimeline'
+import DashboardMenu from './DashboardMenu'
 
 function MainDashboard() {
 
-    const menu = [
-
-        { name: "Contact", icon: <MdOutlineContactPhone />, qty: 51 },
-        { name: "Loan", icon: <CiFileOn />, qty: 56 },
-        { name: "Product", icon: <BsBag />, qty: 80 },
-        { name: "Bank", icon: <AiOutlineBank />, qty: 30 },
-
-    ]
+   
     return (
         <div className='p-10 grid grid-cols-6 md:grid-rows-8 gap-12 font-inter overflow-hidden'>
-            {
-                menu.map((item) => {
-                    return (
-                        <div className='flex flex-col md:flex-row bg-white rounded-xl items-center justify-between col-span-3 md:col-span-1 gap-5 p-3'>
-                            <div className='text-primary text-base md:text-xl bg-blue-200 p-1 md:p-3 flex justify-center items-center rounded-full'>
-                                {item.icon}
-                            </div>
-                            <div className='flex flex-col mx-auto  '>
-                                <span className='text-black font-bold text-lg md:text-xl'>{item.name.toUpperCase()}</span>
-                                <span className='text-primary font-bold text-center text-lg md:text-xl'>{item.qty}</span>
-
-                            </div>
-                        </div>
-                    )
-                })
-            }
+            <DashboardMenu/>
             <div className='md:col-span-2 md:row-span-4 col-span-6 row-span-6 rounded-xl bg-white'>
             <NotificationTimeline/>
             </div>

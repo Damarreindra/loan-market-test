@@ -19,9 +19,9 @@ function BankProductMenu() {
       {
         menu.map((item)=>{
           return(
-            <div className='bg-white rounded-xl flex justify-center items-center gap-2 flex-col md:col-span-1 col-span-6 p-5'>
-              <span className='text-gray-400  text-2xl md:text-5xl'>{item.icon}</span>
-              <span className='text-gray-400 text-sm md:text-xl'>{item.name}</span>
+            <div className='bg-white rounded-xl flex text-center justify-center items-center gap-2 flex-col md:col-span-1 col-span-6 p-5'>
+              <span className='text-gray-400  text-2xl md:text-5xl xl:text-2xl'>{item.icon}</span>
+              <span className='text-gray-400 text-sm md:text-xl xl:text-lg'>{item.name}</span>
 
             </div>
           )

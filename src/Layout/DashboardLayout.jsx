@@ -6,7 +6,7 @@ import { AiOutlineBank } from "react-icons/ai";
 import { IoSpeedometerOutline, IoLayersOutline, IoClose } from "react-icons/io5";
 import { FaWhatsapp, FaCaretDown } from "react-icons/fa";
 import { HiOutlineBell } from "react-icons/hi";
-import { NavLink, Outlet } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 

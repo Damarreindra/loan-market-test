@@ -10,7 +10,7 @@ const Stepper = ({ currentStep, steps }) => {
             className={`flex-1 flex items-center justify-center circleWrapper 
               ${index + 1 < currentStep && 'passed'}`}
           >
-            <div className="flex flex-col items-center min-h-[4.5rem] w-full px-2">
+            <div className="flex flex-col items-center min-h-[4.5rem] xl:min-h-[6rem] w-full px-2">
               <div 
                 className={`
                   w-4 h-4 md:w-5 md:h-5 
