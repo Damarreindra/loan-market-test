@@ -17,7 +17,6 @@ function App() {
     <Route path="/dashboard/product/bank-product/:slug/edit" element={<EditBankProduct />} />
     <Route path="/dashboard/edit-application" element={<EditApplication />} />
     <Route path="*" element={<NotFoundPage />} />
-
   </Routes>
  </Router>
  )
